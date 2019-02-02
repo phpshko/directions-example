@@ -7,7 +7,7 @@ use Directions\actions\TurnAction;
 
 class TurnActionParser extends AbstractRegexActionParser
 {
-    protected $pattern = '/^turn\s([\d\.\-]+)/';
+    protected $pattern = '/^turn\s([\d.\-]+)/';
 
     public function getAction(): ActionInterface
     {

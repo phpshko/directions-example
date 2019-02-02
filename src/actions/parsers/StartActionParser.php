@@ -7,7 +7,7 @@ use Directions\actions\StartAction;
 
 class StartActionParser extends AbstractRegexActionParser
 {
-    protected $pattern = '/^([\d\.\-]+)\s([\d\.\-]+)\sstart\s([\d\.\-]+)/';
+    protected $pattern = '/^([\d.\-]+)\s([\d.\-]+)\sstart\s([\d.\-]+)/';
 
     public function getAction(): ActionInterface
     {

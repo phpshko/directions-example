@@ -8,7 +8,7 @@ interface ActionParserInterface
 {
     public function __construct(string $line);
 
-    public function isMatch():bool;
+    public function isMatch(): bool;
 
     /**
      * Get new line, after remove matched substring

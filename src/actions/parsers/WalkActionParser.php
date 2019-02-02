@@ -7,7 +7,7 @@ use Directions\actions\ActionInterface;
 
 class WalkActionParser extends AbstractRegexActionParser
 {
-    protected $pattern = '/^walk\s([\d\.\-]+)/';
+    protected $pattern = '/^walk\s([\d.\-]+)/';
 
     public function getAction(): ActionInterface
     {

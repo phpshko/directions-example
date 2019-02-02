@@ -21,7 +21,7 @@ abstract class AbstractRegexActionParser implements ActionParserInterface
 
     public function isMatch(): bool
     {
-        return preg_match($this->pattern, $this->line, $matches);
+        return preg_match($this->pattern, $this->line);
     }
 
     public function getNewLine(): string
