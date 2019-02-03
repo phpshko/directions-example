@@ -1,12 +1,13 @@
 <?php
+
+use Directions\Calculators\AveragePointCalculator;
+use Directions\Calculators\WorstDistanceCalculator;
+use Directions\Parsers\Cases\CasesParser;
+use Directions\Parsers\Direction\DirectionParser;
+
 error_reporting(E_ALL);
 
 require_once 'vendor/autoload.php';
-
-use Directions\AveragePointCalculator;
-use Directions\CasesParser;
-use Directions\DirectionParser;
-use Directions\WorstDistanceCalculator;
 
 $filePath = $argv[1] ?? null;
 
